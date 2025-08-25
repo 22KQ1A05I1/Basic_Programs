@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Q3_leap {
+
+    static boolean EorO(int n){
+       if(n%4==0 && n%100!=0 || n%400==0){
+        return true;
+       }
+       else{
+        return false;
+       }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(n));
+    }
+
+
+    
+}
