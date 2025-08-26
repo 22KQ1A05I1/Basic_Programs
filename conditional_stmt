@@ -1,0 +1,30 @@
+    
+import java.util.Scanner;
+public class Q6_grade {
+    
+
+
+    static String EorO(int n){
+       if(n>=90) return "Grade A";
+       else if(n>=80 && n<90) return "Grade B";
+       else if(n>=70 && n<80) return "Grade C";
+       else if(n>=60 && n<70) return "Grade D";
+       else if(n>=50 && n<60) return "Grade E";
+       else return "Grade F";
+
+        
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter marks = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(n));
+    }
+
+
+    
+
+
+    
+}
