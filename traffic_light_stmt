@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class Q8_traffic  {
+
+    static String EorO(String n){
+        if(n.equals("Red")){
+            return "Green";
+        }
+
+        if(n.equals("Green")){
+            return "Yellow";
+        }
+        if(n.equals("Yellow")){
+            return "Red";
+        }
+        return "Invalid color";
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        String n=sc.next();
+        System.out.println(EorO(n));
+    }
+
+
+    
+}
+
