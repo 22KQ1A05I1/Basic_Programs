@@ -1,0 +1,47 @@
+
+    
+import java.util.Scanner;
+public class Q7_discount {
+    
+
+
+    static int EorO(int n,String s){
+        int dis=0;
+        if(n<12){
+            dis=50;
+
+        }
+        else if(n>60){
+           dis=30;
+        }
+        else{
+            dis=0;
+        }
+
+        if(s.equals("premium")){
+            dis+=10;
+        }
+        else if(s.equals("vip")){
+            dis+=20;
+        }
+    return dis;
+      
+        
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter age = ");
+        int n=sc.nextInt();
+         System.out.print("enter ticket_type = ");
+        String s=sc.next();
+        System.out.println(EorO(n,s));
+    }
+
+
+    
+
+
+    
+}
+
