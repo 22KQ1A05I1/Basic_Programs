@@ -1,0 +1,43 @@
+
+
+import java.util.Scanner;
+
+public class Q10_oper {
+
+    static String EorO(int n1,int n2,String s){
+        switch (s) {
+            case "+":
+            return String.valueOf(n1+n2);
+                // break;    no need break which using return values
+            case "-":
+            return String.valueOf(n1-n2);  
+            case "*":
+            return String.valueOf(n1*n2);  
+            case "/":
+            if(n2==0){return "Division by zero not poassible";}
+            return String.valueOf(n1/n2);
+            default:
+            return "Invaid opertor";
+            
+        }
+   
+
+       
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n1 = ");
+        int n1=sc.nextInt();
+        System.out.print("enter n2 = ");
+        int n2=sc.nextInt();
+        System.out.print("enter s(+,-,*,/) = ");
+        String s=sc.next();
+        System.out.println(EorO(n1,n2,s));
+    }
+
+
+    
+}
+
+
