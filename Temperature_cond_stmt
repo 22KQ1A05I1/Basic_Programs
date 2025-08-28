@@ -1,0 +1,35 @@
+
+
+import java.util.Scanner;
+
+public class Q9_temp  {
+
+    static String EorO(int n){
+        if(n<0){
+            return "Freezing";
+        }
+
+        if(0<=n && n<=10){
+            return "cold";
+        }
+        if(11<=n && n<=25){
+            return "warm";
+        }
+         if(26<=n && n<=35){
+            return "hot";
+        }
+        return "very hot";
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(n));
+    }
+
+
+    
+}
+
+
