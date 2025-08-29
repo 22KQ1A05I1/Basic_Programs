@@ -1,0 +1,49 @@
+
+
+
+
+import java.util.Scanner;
+
+public class Q12_inbewsum  {
+
+static int EorO(int m,int n){
+  int sum_div=0;
+//   int sum_notdiv=0;
+        for(int i=m;i<=n;i++){
+            if(i%3==0 && i%5==0){
+                sum_div+=i;
+            }
+            // else{
+            //     sum_notdiv+=i;
+
+            // }
+        }
+        // System.out.println(sum_div);
+        // System.out.println(sum_notdiv);
+
+        return sum_div;
+        
+
+
+        }
+   
+
+       
+    
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter m = ");
+        int m=sc.nextInt();
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(m,n));
+    }
+
+
+    
+}
+
+
+
+Q12_inbewsum
