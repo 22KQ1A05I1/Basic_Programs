@@ -1,0 +1,47 @@
+
+
+
+import java.util.Scanner;
+
+public class Q11_diff {
+
+static int EorO(int n,int m){
+  int sum_div=0;
+  int sum_notdiv=0;
+        for(int i=1;i<=m;i++){
+            if(i%4==0){
+                sum_div+=i;
+            }
+            else{
+                sum_notdiv+=i;
+
+            }
+        }
+        System.out.println(sum_div);
+        System.out.println(sum_notdiv);
+
+        return sum_notdiv-sum_div;
+        
+
+
+        }
+   
+
+       
+    
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.print("enter m = ");
+        int m=sc.nextInt();
+        System.out.println(EorO(n,m));
+    }
+
+
+    
+}
+
+
+
