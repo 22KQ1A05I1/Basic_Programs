@@ -1,0 +1,31 @@
+
+import java.util.Scanner;
+
+public class Q15_vowel {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter a string = ");
+        String n=sc.next();
+          int i=0;
+          int c=0;
+        while(i<n.length()){
+            // char ch=Charater.(n.charAt(i));
+             char ch = Character.toLowerCase(n.charAt(i));
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+                c=c+1;
+            }
+            i++;
+
+
+
+        }
+
+        System.out.println(c);
+
+
+
+      
+    }
+    
+}
+
