@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Q19_Strstrong {
+
+    static boolean EorO(int n){
+      int d=0;
+      int r=0;
+      int temp=n;
+       
+
+       while(n>0){
+        d=n%10;
+        r=r+fact(d);
+        n=n/10;
+           
+       }
+       if(r==temp){
+        return true;
+       }
+       return false;
+       
+        
+    }
+    
+    static int fact(int d){
+        int fact=1;
+        for(int i=1;i<=d;i++){
+            fact=fact*i;
+        }
+        return fact;
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(n));
+    }
+
+
+    
+}
