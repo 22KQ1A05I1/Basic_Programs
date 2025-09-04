@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+public class Q18_Amrstrong {
+
+    static boolean EorO(int n){
+      int d=0;
+      int r=0;
+      int temp=n;
+      int c=size( n);
+       
+  
+       while(n>0){
+        d=n%10;
+        r=r+(int)Math.pow(d,c);
+        n=n/10;
+      
+           
+       }
+       System.out.println(c);
+       if(r==temp){
+        return true;
+       }
+       return false;
+       
+        
+    }
+    
+    static int size(int n){
+        int c=0;
+        while(n>0){
+        c=c+1;
+        n=n/10;
+    }
+    return c;
+
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter n = ");
+        int n=sc.nextInt();
+        System.out.println(EorO(n));
+    }
+
+
+    
+}
